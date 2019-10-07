@@ -1,0 +1,108 @@
+style body,html {height: 100%; margin: 0;}
+
+.sl{display: block; margin-left: auto; margin-right: auto;
+background-image: url("snigis_logo.png");
+height: 10%;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;}
+
+#LULW{
+  opacity: 0.4;
+}
+
+
+.header{background-color:black}
+
+.container {box-sizing:border-box; margin-left:25%; margin-right:25%;;background-color: whitesmoke ; padding:0px; text-align: center}
+
+#twitch-embed{float: right; padding: 2px;}
+#mixer{width: 648px;height: 400px; padding: 2px; float: left;}
+iframe {
+  border: 0px;
+  overflow: hidden;
+}
+
+.IG{
+  position: absolute;
+  top: 344px;
+  left: 60px;
+  color: black;
+}
+.IG:hover{
+  text-decoration: underline black;
+  
+}
+.TW{
+  position: absolute;
+  top: 344px;
+  right: 60px;
+  color: black;
+
+}
+.TW:hover{
+  text-decoration: underline black;
+}
+
+
+
+.collapsible {
+  
+  background-color: black;
+  color: yellow;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: center;
+  outline: none;
+  font-size: 30px;
+}
+
+.active, .collapsible:hover {
+  background-color: yellow;
+  color: black;
+}
+
+.content {
+  padding: 0 18px;
+  display: none;
+  overflow: hidden;
+  background-color: #f1f1f1;
+}
+#wttyla{display: block; margin-left: auto; margin-right: auto}
+#kekw{display: block; margin-left: auto; margin-right: auto}
+
+.pdf{text-align: center;}
+#WTT{font-size: 40pt;}
+
+
+body{background-color: whitesmoke}
+
+ul.breadcrumb {
+    text-align: center;
+    padding: 10px 16px;
+    list-style: square;
+    background-color:black;}
+  
+  ul.breadcrumb li {
+    display: inline;
+    font-size: 30px;}
+  
+  ul.breadcrumb li+li:before {
+    padding: 8px;
+    color: yellow;
+    content: "|\00a0";}
+  
+  ul.breadcrumb li a {
+    color: yellow;
+    text-decoration: none;}
+  
+  ul.breadcrumb li a:hover {
+    color: yellow;
+    text-decoration: underline;}
+
+div.bild{
+  position: sticky;
+  top:0;
+}

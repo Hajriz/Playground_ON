@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="stylesheet.css">
+    <meta charset="utf-8"/>
+    <style>
+        body {
+            height: 10%;
+            margin: 0; 
+        }
+    </style>
+    <title>Snigis.tv</title>
+</head>
+
+
+
+<body>
+<!--
+<a href="https://www.instagram.com/_snigis_"><h1 class="IG">Instagram</h1></a>  
+<a href="https://www.twitter.com/snigis"><h1 class="TW">Twitter</h1> </a>
+-->
+
+    <div class="header">
+        <img class="sl" src="snigis_logo.png" alt="snigis_logo" align="center" style="width:15%;height:15%;">
+
+        <ul class="breadcrumb">
+            <li><img id="LULW" src="snigis_logo.png" style="width: 3.5%; height:3.5%"></li>
+            <li><a href="#">Home</a></li>
+            <li><a href="https://www.twitch.tv/snigis" target="_blank">Twitch.tv</a></li>
+            <li><a href="https://www.twitch.tv/snigis/videos" target="_blank">Videos</a></li>
+            <li><a href="https://www.twitch.tv/snigis/clips?filter=clips&range=7d" target="_blank">Clips</a></li>
+            <li><a href="https://www.twitch.tv/subs/snigis" target="_blank">Subscribe</a></li>
+            <li><img id="LULW" src="snigis_logo.png" style="width: 3.5%; height:3.5%"></li>
+        </ul>
+
+    </div>
+    <div class="container">
+        <h2>About Snigis</h2>
+        <p>HeyGuys, my name is Snigis. </br></br>
+            I'm 23 years old and currently I'm studying Business Administration Technoloy. </br>
+            I grew up playing videogames and still addicted, which is nice! Since I play so much </br>
+            I decided to give streaming a try. </br></br>
+            If you want to know anything about me or the stream, just ask.
+        </p>
+    </div>
+   
+    <button type="button" class="collapsible">Livestream</button>
+    <div class="content">
+        <div id="twitch-embed"></div>
+
+        <script src="https://embed.twitch.tv/embed/v1.js"></script>
+        <script>
+            let embed = new Twitch.Embed('twitch-embed', {
+                channel: 'snigis',
+                layout: 'video',
+                height: '400px',
+                width: '648px'
+            });
+        </script>
+    <iframe id="mixer" src="https://mixer.com/embed/player/snigis"></iframe>
+    </div>
+
+   <!--<button type="button" class="collapsible">WTT Young Leader Award 2019</button>
+    <div class="content">
+        <div id="WTTYLA"></div>
+        <img id="wttyla" src="WTT_YLA_2019.PNG" alt="WTT_Zertifikat">
+    </div>-->
+    <button type="button" class="collapsible">KEKW</button>
+    <div class="content">
+        <img id="kekw" src="kekw.jpg" alt="KEKW"></div>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+
+        for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var content = this.nextElementSibling;
+                if (content.style.display === "block") {
+                    content.style.display = "none";
+                } else {
+                    content.style.display = "block";
+                }
+            });
+        }
+    </script>
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+
+
+
+</html>
